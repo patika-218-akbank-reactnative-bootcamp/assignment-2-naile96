@@ -7,32 +7,32 @@ export const ChatList = [
       {
         userId: 'u1',
         text: 'Bir sorunu mu oldu?',
-        date: '11',
+        date: '20:39',
       },
       {
         userId: 'u2',
         text: 'profil fotoğrafı ekleyemiyorum. Aynı sorunla karştınız mı?',
-        date: '12',
+        date: '20:40',
       },
       {
         userId: 'u1',
         text: 'mail adresime',
-        date: '13',
+        date: '20:41',
       },
       {
         userId: 'u1',
         text: 'atabilir misin 🙂',
-        date: '14',
+        date: '20:43',
       },
       {
         userId: 'u2',
         text: 'Tamamdır hemen atıyorum teşekkürler',
-        date: '15',
+        date: '20:50',
       },
       {
         userId: 'u1',
         text: 'Kolay gelsinnnn 👋',
-        date: '16',
+        date: '20:54',
       },
     ],
   },
@@ -40,6 +40,38 @@ export const ChatList = [
     avatarUrl: 'https://faces-img.xcdn.link/image-lorem-face-2646.jpg',
     name: 'Cenk',
     lastMessage: 'Bunları inceleyebilir misin?',
+    messages: [
+      {
+        userId: 'u2',
+        text: 'Nasılsın?',
+        date: '11:59',
+      },
+      {
+        userId: 'u1',
+        text: 'iyiyim iyi',
+        date: '12:03',
+      },
+      {
+        userId: 'u2',
+        text: 'sen nasılsın',
+        date: '12:07',
+      },
+      {
+        userId: 'u1',
+        text: 'Bende iyiyim projeye çalışıyorum🙂',
+        date: '12:08',
+      },
+      {
+        userId: 'u2',
+        text: 'Bu sefer ki biraz uğraştırıcı mı?',
+        date: '12:07',
+      },
+      {
+        userId: 'u1',
+        text: 'evet ben çalışsam iyi olucak 👋',
+        date: '12:10',
+      },
+    ],
   },
   {
     avatarUrl: 'https://faces-img.xcdn.link/image-lorem-face-3646.jpg',

@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Profile from './Profile';
 
-const Users = ({data, navigation}) => {
+const User = ({data, navigation}) => {
   return (
     <TouchableOpacity
       style={styles.header}
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Users;
+export default User;

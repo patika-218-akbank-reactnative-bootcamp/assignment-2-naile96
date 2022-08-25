@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
 
 const ChatMessage = ({messages}) => {
   const isMyMassage = () => {
@@ -7,23 +7,25 @@ const ChatMessage = ({messages}) => {
   };
 
   const styles = StyleSheet.create({
-    container: {
-      padding: 10,
-    },
     ballon: {
       backgroundColor: isMyMassage() ? '#dcf8c5' : 'white',
-      marginRight: isMyMassage() ?  0 : 50,
-      marginLeft: isMyMassage() ?  50 : 0,
-      borderRadius: 5,
+      marginRight: isMyMassage() ? 5 : 55,
+      marginLeft: isMyMassage() ? 55 : 5,
+      borderRadius: 15,
       padding: 10,
       margin: 5,
     },
+    date: {
+        alignSelf: 'flex-end',
+        color: 'gray'
+    }
   });
 
   return (
-    <Text style={styles.ballon} key={messages.date}>
-      {messages.text}
-    </Text>
+    <View style={styles.ballon}>
+      <Text key={messages.date}>{messages.text}</Text>
+      <Text style={styles.date} key={messages.date}>{messages.date}</Text>
+    </View>
   );
 };
 

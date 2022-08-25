@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, FlatList} from 'react-native';
+import {FlatList} from 'react-native';
 import ChatMessage from './ChatMessage';
 
 const ChatDetails = ({navigation, route}) => {

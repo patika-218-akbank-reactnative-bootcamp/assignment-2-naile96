@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/components/Home';
 import {Button, View} from 'react-native';
-import Users from './src/components/Users';
+import User from './src/components/User';
 import ChatDetails from './src/components/ChatDetails';
 
 const Stack = createNativeStackNavigator();
@@ -30,7 +30,7 @@ const App = () => {
           name="Home"
           component={Home}
         />
-        <Stack.Screen name="Users" component={Users} />
+        <Stack.Screen name="User" component={User} />
         <Stack.Screen
           name="ChatDetails"
           component={ChatDetails}
