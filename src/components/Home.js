@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet, ScrollView} from 'react-native';
-import {Messages} from './Data';
-import Chat from './Chat';
+import {ChatList} from './Data';
+import Users from './Users';
 
 const Home = ({navigation}) => {
   return (
@@ -19,11 +19,10 @@ const Home = ({navigation}) => {
           onPress={() => navigation.navigate('Details', {name: 'ali'})}
         />
       </View>
-
-      <Chat data={Messages[0]} />
-      <Chat data={Messages[1]} />
-      <Chat data={Messages[2]} />
-      <Chat data={Messages[3]} />
+      <Users data={ChatList[0]} navigation={navigation} />
+      <Users data={ChatList[1]} navigation={navigation} />
+      <Users data={ChatList[2]} navigation={navigation} />
+      <Users data={ChatList[3]} navigation={navigation} />
     </ScrollView>
   );
 };
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     borderColor: 'gray',
   },
 });

@@ -2,10 +2,9 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/components/Home';
-import Details from './src/components/Details';
-import {Button, Text, View} from 'react-native';
-import Chat from './src/components/Chat';
-
+import {Button, View} from 'react-native';
+import Chat from './src/components/Users';
+import ChatDetails from './src/components/ChatDetails';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,27 +19,23 @@ const App = () => {
             headerLeft: props => (
               <View>
                 <Button
-                  onPress={() => alert('This is a button!')}
+                  onPress=
                   title="Edit"
                   color="#34B7F1"
                 />
               </View>
             ),
-            headerRight: props => (
-              <View>
-                <Button
-                  onPress={() => alert('This is a button!')}
-                  title="icon"
-                  color="#34B7F1"
-                />
-              </View>
-            ),
+            headerR: props => <LogoTitle {...props} />,
           }}
           name="Home"
           component={Home}
         />
         <Stack.Screen name="Chat" component={Chat} />
-        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen
+          name="ChatDetails"
+          component={ChatDetails}
+          options={({route}) => ({title: route.params.data.name})}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

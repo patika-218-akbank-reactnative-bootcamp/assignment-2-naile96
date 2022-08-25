@@ -1,19 +1,22 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Profile from './Profile';
 
-
-const Chat = ({data}) => {
+const Users = ({data, navigation}) => {
   return (
-    <View style={styles.header}>
+    <TouchableOpacity
+      style={styles.header}
+      onPress={() => {
+        navigation.navigate('ChatDetails', {data: data});
+      }}>
       <View>
-        <Profile size={80} url={data.profile.avatarUrl} />
+        <Profile size={80} url={data.avatarUrl} />
       </View>
       <View style={styles.textArea}>
-        <Text style={styles.textName}>{data.profile.name}</Text>
-        <Text style={styles.message}>{data.description}</Text>
+        <Text style={styles.textName}>{data.name}</Text>
+        <Text style={styles.message}>{data.lastMessage}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -36,11 +39,10 @@ const styles = StyleSheet.create({
   },
   textArea: {
     justifyContent: 'space-around',
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     borderColor: 'gray',
-    borderTopWidth: 0.5,
     flex: 1,
   },
 });
 
-export default Chat;
+export default Users;
