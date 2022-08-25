@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/components/Home';
 import {Button, View} from 'react-native';
-import Chat from './src/components/Users';
+import Users from './src/components/Users';
 import ChatDetails from './src/components/ChatDetails';
 
 const Stack = createNativeStackNavigator();
@@ -19,7 +19,7 @@ const App = () => {
             headerLeft: props => (
               <View>
                 <Button
-                  onPress=
+                  onPress={() => alert('This is a button!')}
                   title="Edit"
                   color="#34B7F1"
                 />
@@ -30,7 +30,7 @@ const App = () => {
           name="Home"
           component={Home}
         />
-        <Stack.Screen name="Chat" component={Chat} />
+        <Stack.Screen name="Users" component={Users} />
         <Stack.Screen
           name="ChatDetails"
           component={ChatDetails}
