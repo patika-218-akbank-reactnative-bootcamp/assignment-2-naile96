@@ -3,9 +3,9 @@
 ### Table of Contents
 
 * [About](#About)
+- [Demo](#demo)
 - [Project Stack and Dependencies](#project-stack-and-dependencies)
 - [Components](#components)
-- [Demo](#demo)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -15,6 +15,11 @@
 This project is sample Whatsapp Clone Application for educational purpose in Patika-Akbank Bootcamp week #2.
 
 Project includes following components:
+
+
+## Demo
+
+<img src="assets/simulator-chat.gif" width="250" height="500">
 
 ## Project Stack and Dependencies
 
@@ -29,7 +34,3 @@ Project includes following components:
 * ChatMessage: It is basic component for Chat Balloon
 * Profile: Renders Profile Image
 * User: Renders User details
-
-## Demo
-
-<img src="assets/simulator-chat.gif" width="250" height="500">
