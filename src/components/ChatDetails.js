@@ -10,6 +10,7 @@ const ChatDetails = ({navigation, route}) => {
     <FlatList
       data={route.params.data.messages}
       renderItem={({item}) => <ChatMessage messages={item} />}
+      inverted
     />
   );
 };

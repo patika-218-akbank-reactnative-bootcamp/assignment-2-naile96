@@ -5,6 +5,7 @@ import Home from './src/components/Home';
 import {Button, View} from 'react-native';
 import User from './src/components/User';
 import ChatDetails from './src/components/ChatDetails';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,7 +26,9 @@ const App = () => {
                 />
               </View>
             ),
-            headerR: props => <LogoTitle {...props} />,
+            headerRight: props => (
+              <Ionicons size={30} name="ellipsis-horizontal-outline" />
+            ),
           }}
           name="Home"
           component={Home}
