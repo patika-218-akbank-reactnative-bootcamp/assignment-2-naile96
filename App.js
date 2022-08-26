@@ -22,12 +22,12 @@ const App = () => {
                 <Button
                   onPress={() => alert('This is a button!')}
                   title="Edit"
-                  color="#34B7F1"
+                  color="#0070FF"
                 />
               </View>
             ),
             headerRight: props => (
-              <Ionicons size={30} name="ellipsis-horizontal-outline" />
+              <Ionicons size={30} color="#0070FF" name="create-outline" />
             ),
           }}
           name="Home"

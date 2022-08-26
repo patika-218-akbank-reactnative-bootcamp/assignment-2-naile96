@@ -10,12 +10,12 @@ const Home = ({navigation}) => {
       <View style={styles.container}>
         <Button
           title="Broadast List"
-          color="#34B7F1"
+          color="#0070FF"
           onPress={() => navigation.navigate('Details', {name: 'ali'})}
         />
         <Button
           title="New Group"
-          color="#34B7F1"
+          color="#0070FF"
           onPress={() => navigation.navigate('Details', {name: 'ali'})}
         />
       </View>
@@ -23,6 +23,10 @@ const Home = ({navigation}) => {
       <User data={ChatList[1]} navigation={navigation} />
       <User data={ChatList[2]} navigation={navigation} />
       <User data={ChatList[3]} navigation={navigation} />
+      <User data={ChatList[4]} navigation={navigation} />
+      <User data={ChatList[5]} navigation={navigation} />
+      <User data={ChatList[6]} navigation={navigation} />
+      <User data={ChatList[7]} navigation={navigation} />
     </ScrollView>
   );
 };

@@ -1,17 +1,22 @@
 import React from 'react';
-import {FlatList} from 'react-native';
+import {FlatList, ImageBackground} from 'react-native';
 import ChatMessage from './ChatMessage';
+import Input from './Input';
+
+const image = require('../../assets/Whatsapp.png');
 
 const ChatDetails = ({navigation, route}) => {
-  /*const isMyMassage = () => {
-    return route.params.data.messages.id === 'u1';
-  };*/
   return (
-    <FlatList
-      data={route.params.data.messages}
-      renderItem={({item}) => <ChatMessage messages={item} />}
-      inverted
-    />
+    <ImageBackground style={{width: '100%', height: '100%'}} source={image}>
+      <FlatList
+        data={route.params.data.messages}
+        renderItem={({item}) => (
+          <ChatMessage key={item.userId} messages={item} />
+        )}
+        inverted
+      />
+      <Input />
+    </ImageBackground>
   );
 };
 

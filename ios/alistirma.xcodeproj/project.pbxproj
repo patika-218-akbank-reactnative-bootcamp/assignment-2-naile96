@@ -30,7 +30,7 @@
 		95A082B1C8784F64B1751C37 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E053697AB48B4F2D8DF8EB1E /* Octicons.ttf */; };
 		22424EFAC7A041BEA3C4EFCA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 973DA8A6908F457A9C9C406A /* SimpleLineIcons.ttf */; };
 		D6017EE86D6141648CFCB98E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DE2ABF945C414FA7F7D96A /* Zocial.ttf */; };
-		9E33BA31688E46C7B91DB39D /* whatsappBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F3436B84CB90487685947100 /* whatsappBackgroundImage.png */; };
+		6C57948D260045A98C6C728D /* Whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 971EA72550B947C4BA8FCBC3 /* Whatsapp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		E053697AB48B4F2D8DF8EB1E /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../assets/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		973DA8A6908F457A9C9C406A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../assets/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E2DE2ABF945C414FA7F7D96A /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../assets/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F3436B84CB90487685947100 /* whatsappBackgroundImage.png */ = {isa = PBXFileReference; name = "whatsappBackgroundImage.png"; path = "../assets/whatsappBackgroundImage.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		971EA72550B947C4BA8FCBC3 /* Whatsapp.png */ = {isa = PBXFileReference; name = "Whatsapp.png"; path = "../assets/Whatsapp.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +202,7 @@
 				E053697AB48B4F2D8DF8EB1E /* Octicons.ttf */,
 				973DA8A6908F457A9C9C406A /* SimpleLineIcons.ttf */,
 				E2DE2ABF945C414FA7F7D96A /* Zocial.ttf */,
-				F3436B84CB90487685947100 /* whatsappBackgroundImage.png */,
+				971EA72550B947C4BA8FCBC3 /* Whatsapp.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				95A082B1C8784F64B1751C37 /* Octicons.ttf in Resources */,
 				22424EFAC7A041BEA3C4EFCA /* SimpleLineIcons.ttf in Resources */,
 				D6017EE86D6141648CFCB98E /* Zocial.ttf in Resources */,
-				9E33BA31688E46C7B91DB39D /* whatsappBackgroundImage.png in Resources */,
+				6C57948D260045A98C6C728D /* Whatsapp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

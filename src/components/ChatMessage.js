@@ -16,15 +16,17 @@ const ChatMessage = ({messages}) => {
       margin: 5,
     },
     date: {
-        alignSelf: 'flex-end',
-        color: 'gray'
-    }
+      alignSelf: 'flex-end',
+      color: 'gray',
+    },
   });
 
   return (
     <View style={styles.ballon}>
-      <Text key={messages.date}>{messages.text}</Text>
-      <Text style={styles.date} key={messages.date}>{messages.date}</Text>
+      <Text>{messages.text}</Text>
+      <Text style={styles.date} key={messages.date}>
+        {messages.date}
+      </Text>
     </View>
   );
 };
