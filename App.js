@@ -37,7 +37,10 @@ const App = () => {
         <Stack.Screen
           name="ChatDetails"
           component={ChatDetails}
-          options={({route}) => ({title: route.params.data.name})}
+          options={({route}) => ({
+            title: route.params.data.name,
+            headerTitleAlign: 'left',
+          })}
         />
       </Stack.Navigator>
     </NavigationContainer>
