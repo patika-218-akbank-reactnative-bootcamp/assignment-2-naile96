@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from 'react-native';
+import {View, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Input = () => {
@@ -19,8 +14,7 @@ const Input = () => {
         <Ionicons style={styles.icons} name="camera-outline" />
         <Ionicons style={styles.icons} name="mic-outline" />
       </View>
-      </TouchableOpacity>
-    
+    </TouchableOpacity>
   );
 };
 
