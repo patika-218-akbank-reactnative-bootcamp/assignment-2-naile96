@@ -1,18 +1,26 @@
 import React from 'react';
-import {View, Text, StyleSheet, TextInput} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Input = () => {
   return (
-    <View style={styles.boxContainer}>
-      <Ionicons style={styles.icons} name="add-outline" />
-      <View style={styles.box}>
-        <TextInput style={styles.textinput} />
-        <Ionicons style={styles.boxicons} name="albums-outline" />
+    <TouchableOpacity>
+      <View style={styles.boxContainer}>
+        <Ionicons style={styles.icons} name="add-outline" />
+        <View style={styles.box}>
+          <TextInput style={styles.textinput} />
+          <Ionicons style={styles.boxicons} name="albums-outline" />
+        </View>
+        <Ionicons style={styles.icons} name="camera-outline" />
+        <Ionicons style={styles.icons} name="mic-outline" />
       </View>
-      <Ionicons style={styles.icons} name="camera-outline" />
-      <Ionicons style={styles.icons} name="mic-outline" />
-    </View>
+      </TouchableOpacity>
+    
   );
 };
 

@@ -7,6 +7,14 @@ const ChatMessage = ({messages}) => {
   };
 
   const styles = StyleSheet.create({
+    name: {
+      color: '#075E54',
+      fontWeight: 'bold',
+      marginBottom: 5,
+    },
+    text: {
+      fontSize: 15,
+    },
     ballon: {
       backgroundColor: isMyMassage() ? '#dcf8c5' : 'white',
       marginRight: isMyMassage() ? 5 : 55,
@@ -23,7 +31,8 @@ const ChatMessage = ({messages}) => {
 
   return (
     <View style={styles.ballon}>
-      <Text>{messages.text}</Text>
+      <Text style={styles.name}>{messages.userName}</Text>
+      <Text style={styles.text}>{messages.text}</Text>
       <Text style={styles.date} key={messages.date}>
         {messages.date}
       </Text>

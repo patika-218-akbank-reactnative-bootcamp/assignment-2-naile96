@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/components/Home';
-import {Button, View} from 'react-native';
+import {Alert, Button, View} from 'react-native';
 import User from './src/components/User';
 import ChatDetails from './src/components/ChatDetails';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -20,7 +20,7 @@ const App = () => {
             headerLeft: props => (
               <View>
                 <Button
-                  onPress={() => alert('This is a button!')}
+                  onPress={() => Alert.alert('Simple Button pressed')}
                   title="Edit"
                   color="#0070FF"
                 />
